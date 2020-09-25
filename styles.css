@@ -1,8 +1,7 @@
 body {
   background-color: #D5D5D5;
-  font-family: Helvetica, sans-serif;
+  font-family:
 }
-
 
 .timeline {
   position: relative;
@@ -30,6 +29,7 @@ body {
 
 .side::after {
   content: '';
+  /* content: url(./images/download.png);; */
   position: absolute;
   width: 25px;
   height: 25px;
@@ -109,14 +109,18 @@ button:hover {
 
 
 
-@media (max-width: 768px){
+@media(max-width: 768px){
   .timeline) {
-  flex-diretion: column;
-
+    flex-direction: column;
   }
 }
 
-@keyframes slide-left {
+@media(min-width: 768px) and (max-width: 1000px) {
+  div:not(.timeline){
+
+  }}
+
+/*@keyframes slide-left {
   0% {
     transform: translateX(-100%);
     opacity: 0;
